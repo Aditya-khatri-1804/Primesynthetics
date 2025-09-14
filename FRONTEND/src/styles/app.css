@@ -1,0 +1,160 @@
+  body {
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #ccc;
+    /* background: linear-gradient(135deg, #3f87a6, #ebf8e1, #f69d3c); */
+;  /* 👈 soft light background */
+  }
+
+  /* -------------------- Centering Wrapper -------------------- */
+  .page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+  }
+
+  /* -------------------- Container (Register + Home) -------------------- */
+  .register-container, 
+  .home-container {
+    max-width: 400px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;      /* 👈 pure white card look */
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    animation: slideUp 0.8s ease-out forwards;
+    display: flex;
+    flex-direction: column;
+    gap: px;
+    box-sizing: border-box;
+  }
+
+  /* -------------------- Entry Slide Animation -------------------- */
+  @keyframes slideUp {
+    0% { 
+      transform: translateY(30px); 
+      opacity: 0; 
+    }
+    100% { 
+      transform: translateY(0); 
+      opacity: 1; 
+    }
+  }
+
+  /* -------------------- Headings -------------------- */
+  .register-container h2, 
+  .home-container h1 {
+    text-align: center;
+    color: #444; /* 👈 soft gray instead of dark blue */
+    margin-bottom: 15px;
+  }
+
+  /* -------------------- Inputs -------------------- */
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc; /* 👈 soft neutral border */
+    border-radius: 5px;
+    font-size: 15px;
+    background: #fdfdfd;     /* 👈 subtle light background */
+    transition: 
+      transform 0.3s ease, 
+      box-shadow 0.3s ease, 
+      border 0.3s ease;
+    box-sizing: border-box;
+  }
+
+  input:focus,
+  select:focus {
+    transform: scale(1.03);
+    border-color: #66b3ff;  /* 👈 light blue */
+    box-shadow: 0 0 10px rgba(102, 179, 255, 0.5);
+    outline: none;
+  }
+
+  input:hover,
+  select:hover {
+    border-color: #99ccff; /* 👈 softer hover */
+  }
+
+  /* -------------------- Button -------------------- */
+  button {
+    width: 100%;
+    padding: 10px 20px;          /* slightly taller button */
+    margin-top: 15px;       /* space from previous input */
+    background-color: #66b3ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 
+      transform 0.2s ease, 
+      background-color 0.3s ease;
+      align-self: center;
+  }
+  /* 
+  button:hover {
+    background-color: #4da6ff;
+    transform: translateY(-3px);
+  }
+
+  button:active {
+    transform: translateY(0);
+  }
+
+  button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+  } */
+
+  /* -------------------- Text -------------------- */
+  p {
+    text-align: center;
+    margin-top: 10px;
+    color: #666; /* 👈 soft gray */
+    font-weight: bold;
+  }
+
+  /* -------------------- Error -------------------- */
+  .error {
+    color: #e74c3c; /* 👈 light red for errors */
+    font-size: 12px;
+  }
+
+  /* -------------------- Exit Animation -------------------- */
+  @keyframes formExit {
+    0% { 
+      transform: translateY(0); 
+      opacity: 1; 
+    }
+    100% { 
+      transform: translateY(-50px); 
+      opacity: 0; 
+    }
+  }
+
+  .register-container.form-submitted,
+  .home-container.form-submitted {
+    animation: formExit 0.5s ease-out forwards;
+  }
+
+  /* .login-container {
+  max-width: 400px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #66b3ff, #4da6ff); /* 👈 blue gradient */
+  /* border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  animation: slideUp 0.8s ease-out forwards;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-sizing: border-box; */
+/* } */

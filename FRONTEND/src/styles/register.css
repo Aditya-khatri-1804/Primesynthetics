@@ -1,0 +1,6 @@
+
+
+input {
+  border: none;
+  outline: none; /* removes the blue glow on focus */
+}
