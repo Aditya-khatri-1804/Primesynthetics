@@ -251,13 +251,12 @@ export default function Home() {
               Prime Synthetics manufacturing and business operation is spread in the 2200 Sq Meters area which houses imported
               machines, R&D lab, Corporate Office and a warehouse. It has a capacity of producing 2000 MT/year of Non-Woven Fabric and
               its allied products. We are constantly supplying to ASEAN countries apart from other European and African countries.
-              With a support of 50 passionate professional team members we live up to the values and dream of Make in India and Serving the World.
+              With a support of 50 passionate professional team members we live up to the values and dream of Make in India and Serving the whole World.
             </p>
 
 
 
 
-             <p>assf</p>
             <button
               onClick={() => navigate('/Aboutus')}
               style={{
